@@ -12,13 +12,13 @@ class ListItemClass : public QObject
     Q_PROPERTY(double t READ getT NOTIFY tChanged)
 
 public:
-    explicit ListItemClass(QObject *parent = nullptr, double x = 0, double t = 0);
+    ListItemClass(QObject *parent = nullptr, double x = 0, double t = 0);
 
     double getX() {
         return m_x;
     }
     double getT() {
-        return m_x;
+        return m_t;
     }
 
 signals:

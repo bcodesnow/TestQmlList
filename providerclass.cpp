@@ -8,8 +8,8 @@
 ProviderClass::ProviderClass(QObject *parent): QObject(parent)
 {
     ListItemClass* lptr;
-    lptr = new  ListItemClass(nullptr, 1.1, 2.4);
-    myVl.append(qVariantFromValue((QObject*)lptr));
-    lptr = new  ListItemClass(nullptr, 1.5, 2.4);
-    myVl.append(qVariantFromValue((QObject*)lptr));
+    myVl.append(qVariantFromValue((QObject*)new  ListItemClass(nullptr, 22.4, 1.5)));
+    myVl.append(qVariantFromValue((QObject*)new  ListItemClass(nullptr, 1.1, 2.4)));
+    myVl.append(qVariantFromValue((QObject*)new  ListItemClass(nullptr, 5.5, 3.2)));
+
 }

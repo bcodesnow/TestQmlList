@@ -8,3 +8,4 @@ ListItemClass::ListItemClass(QObject *parent, double x, double t) : QObject(pare
 {
 
 }
+
